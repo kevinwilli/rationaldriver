@@ -1,5 +1,7 @@
 package edu.guiflord;
 
+import java.util.Random;
+
 public class rational {
   //declare two variables to hold the numerator and denominator
     private int numerator;
@@ -16,8 +18,9 @@ public class rational {
     //Add a constructor that takes no arguments and sets the numerator to 0 and denominator to 1.
     public rational()
     {
-        numerator = 0;
-        denominator = 1;
+        Random rand = new Random();
+        numerator = rand.nextInt(10) + 1;
+        denominator = rand.nextInt(10) + 1;
     }
 
     //getters
@@ -70,6 +73,13 @@ public class rational {
         return (double)numerator/denominator;
     }
 
+    //Write a method called add that takes a Rational number as an argument, adds it to the rational number represented by the current object, and returns a new Rational object
+    public rational add(rational r)
+    {
+        int num = numerator * r.denominator + r.numerator * denominator;
+        int den = denominator * r.denominator;
+        return new rational(num, den);
+    }
 
     
 
