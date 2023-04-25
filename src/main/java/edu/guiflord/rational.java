@@ -19,8 +19,8 @@ public class rational {
     public rational()
     {
         Random rand = new Random();
-        numerator = rand.nextInt(10) + 1;
-        denominator = rand.nextInt(10) + 1;
+        numerator = rand.nextInt(-100,100) ;
+        denominator = rand.nextInt(-100,100);
     }
 
     //getters

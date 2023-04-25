@@ -10,7 +10,7 @@ public class Driver
         //this test the default constructor.
         System.out.println("Testing the default constructor.");
         rational r1 = new rational();
-        System.out.println("The rational number is "+r1 +"\n");
+        System.out.println("The rational number is "+ r1 +"\n");
 
         //tests the getters and setters.
         //thest the getters and setters
@@ -37,7 +37,7 @@ public class Driver
         //print out the negate method.
         System.out.println("Testing the negate method.");
         r3.negate();
-        System.out.println("The negate rational number is "+ r3);
+        System.out.println("The negate rational number of is "+ r3);
 
         //print out the invert method. 
         System.out.println("Testing the invert method.");
@@ -52,10 +52,12 @@ public class Driver
       // use the constructor to create a new rational number
         rational r4 = new rational(1, 2);
         //use the method add to this class to add r3 to r2
-        System.out.println("Here goes a new random generated rational number.");
+        System.out.println("Here goes a new random generated rational number. "+ r4+"\n");
         r3.add(r4);
+        //print out the inputs
+        System.out.println("The inputs "+ r3 +" and "+ r4);
         //print out the result
-        System.out.println("The sum of the rationals numbers,"+ r3 +" and "+ r4 +" is "+ r3.add(r4));
+        System.out.println("The sum of the rationals numbers, "+ r3 +" and "+ r4 +" is "+ r3.add(r4));
 
         //Add code that prints out a warning if the constructor with parameter attempts to generate a Rational number with a 0 denominator.
 
